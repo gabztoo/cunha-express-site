@@ -25,7 +25,7 @@ const Navigation = () => {
             <img 
               src="/lovable-uploads/b3b7492d-9d20-415b-8ef1-bbe205ecb4a3.png" 
               alt="Cunha Express"
-              className="h-10 w-auto"
+              className="h-16 w-auto"
             />
           </Link>
 
