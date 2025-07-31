@@ -96,7 +96,7 @@ const Services = () => {
                   <img 
                     src="/lovable-uploads/4e1f6e77-ce7c-47c2-8280-94843b3f9bb5.png"
                     alt="Van executiva Cunha Express para transporte corporativo de passageiros"
-                    className="w-full h-80 object-contain bg-gray-50"
+                    className="w-full h-80 object-contain"
                   />
                 </div>
               </div>
