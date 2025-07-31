@@ -80,22 +80,24 @@ const Services = () => {
                 </Button>
               </div>
 
-              <div className="bg-cunha-light-gray rounded-2xl p-8 h-80 flex items-center justify-center">
-                <div className="text-center">
-                  <Truck className="h-24 w-24 text-accent mx-auto mb-4" />
-                  <p className="text-cunha-dark-gray">Imagem: Van de carga transportando equipamentos</p>
-                </div>
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img 
+                  src="/lovable-uploads/c78079c1-c441-45a7-85fd-4455abd50502.png"
+                  alt="Van de carga Cunha Express para transporte de equipamentos e materiais"
+                  className="w-full h-80 object-cover"
+                />
               </div>
             </div>
 
             {/* Cunha Corporativo */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
-                <div className="bg-cunha-light-gray rounded-2xl p-8 h-80 flex items-center justify-center">
-                  <div className="text-center">
-                    <Users className="h-24 w-24 text-accent mx-auto mb-4" />
-                    <p className="text-cunha-dark-gray">Imagem: Van executiva para transporte de passageiros</p>
-                  </div>
+                <div className="rounded-2xl overflow-hidden shadow-lg">
+                  <img 
+                    src="/lovable-uploads/4e1f6e77-ce7c-47c2-8280-94843b3f9bb5.png"
+                    alt="Van executiva Cunha Express para transporte corporativo de passageiros"
+                    className="w-full h-80 object-cover"
+                  />
                 </div>
               </div>
 
