@@ -94,7 +94,7 @@ const Services = () => {
               <div className="order-2 lg:order-1">
                 <div className="rounded-2xl overflow-hidden shadow-lg">
                   <img 
-                    src="/lovable-uploads/4e1f6e77-ce7c-47c2-8280-94843b3f9bb5.png"
+                    src="/lovable-uploads/ebe361fe-697b-48dc-bd12-d8b6ba2fd67c.png"
                     alt="Van executiva Cunha Express para transporte corporativo de passageiros"
                     className="w-full h-80 object-cover"
                   />
