@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'montserrat': ['Montserrat', 'sans-serif'],
+				'roboto': ['Roboto', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -51,6 +55,14 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				// Cunha Express Custom Colors
+				cunha: {
+					navy: 'hsl(var(--cunha-navy))',
+					orange: 'hsl(var(--cunha-orange))',
+					'light-gray': 'hsl(var(--cunha-light-gray))',
+					'dark-gray': 'hsl(var(--cunha-dark-gray))',
+					black: 'hsl(var(--cunha-black))',
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',

@@ -1,0 +1,202 @@
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
+import { 
+  Truck, 
+  Users, 
+  Shield, 
+  Clock, 
+  CheckCircle, 
+  ArrowRight,
+  Phone,
+  Package
+} from "lucide-react";
+
+const Home = () => {
+  return (
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-cunha-navy via-primary to-cunha-navy py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center text-white space-y-8">
+            <Badge className="bg-accent text-accent-foreground font-medium px-4 py-2">
+              <Shield className="h-4 w-4 mr-2" />
+              Certificado ANTT: RNTRC 053472755
+            </Badge>
+            
+            <h1 className="text-4xl md:text-6xl font-bold font-montserrat leading-tight">
+              Transporte Inteligente para o seu 
+              <span className="text-accent"> Negócio</span>
+            </h1>
+            
+            <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
+              Soluções rápidas e seguras em logística de cargas e transporte corporativo de passageiros.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-lg px-8 py-3">
+                <Link to="/contato">
+                  Solicitar um Orçamento
+                  <ArrowRight className="h-5 w-5 ml-2" />
+                </Link>
+              </Button>
+              
+              <Button asChild variant="outline" size="lg" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-cunha-navy">
+                <Link to="/servicos">
+                  Nossos Serviços
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Preview */}
+      <section className="py-20 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold font-montserrat text-cunha-navy mb-4">
+              Nossas Soluções de Transporte
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Oferecemos dois serviços especializados para atender todas as necessidades do seu negócio
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Cunha Cargas */}
+            <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-accent">
+              <CardContent className="p-8 text-center">
+                <div className="bg-accent/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:bg-accent/20 transition-colors">
+                  <Package className="h-10 w-10 text-accent" />
+                </div>
+                
+                <h3 className="text-2xl font-bold font-montserrat text-cunha-navy mb-4">
+                  Cunha Cargas
+                </h3>
+                <p className="text-lg text-muted-foreground mb-4">
+                  Logística Empresarial
+                </p>
+                <p className="text-muted-foreground mb-6">
+                  Transporte de cargas, peças e equipamentos com máxima eficiência. 
+                  Coletamos no seu ponto de origem e entregamos no destino com total segurança.
+                </p>
+                
+                <Button asChild variant="outline" className="group-hover:bg-accent group-hover:text-white transition-colors">
+                  <Link to="/servicos">
+                    Saiba Mais
+                    <ArrowRight className="h-4 w-4 ml-2" />
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Cunha Corporativo */}
+            <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-accent">
+              <CardContent className="p-8 text-center">
+                <div className="bg-accent/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:bg-accent/20 transition-colors">
+                  <Users className="h-10 w-10 text-accent" />
+                </div>
+                
+                <h3 className="text-2xl font-bold font-montserrat text-cunha-navy mb-4">
+                  Cunha Corporativo
+                </h3>
+                <p className="text-lg text-muted-foreground mb-4">
+                  Transporte de Passageiros
+                </p>
+                <p className="text-muted-foreground mb-6">
+                  Serviço de transporte executivo para colaboradores. Especialistas em traslados 
+                  para aeroportos, viagens de negócios e eventos corporativos.
+                </p>
+                
+                <Button asChild variant="outline" className="group-hover:bg-accent group-hover:text-white transition-colors">
+                  <Link to="/servicos">
+                    Saiba Mais
+                    <ArrowRight className="h-4 w-4 ml-2" />
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Features */}
+      <section className="py-20 bg-cunha-light-gray">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold font-montserrat text-cunha-navy mb-4">
+              Por que escolher a Cunha Express?
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="bg-accent/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Shield className="h-8 w-8 text-accent" />
+              </div>
+              <h3 className="text-xl font-semibold font-montserrat text-cunha-navy mb-2">
+                Segurança Garantida
+              </h3>
+              <p className="text-muted-foreground">
+                Certificação ANTT e seguro completo para total tranquilidade
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-accent/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Clock className="h-8 w-8 text-accent" />
+              </div>
+              <h3 className="text-xl font-semibold font-montserrat text-cunha-navy mb-2">
+                Pontualidade
+              </h3>
+              <p className="text-muted-foreground">
+                Compromisso com horários e prazos estabelecidos
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-accent/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <CheckCircle className="h-8 w-8 text-accent" />
+              </div>
+              <h3 className="text-xl font-semibold font-montserrat text-cunha-navy mb-2">
+                Confiabilidade
+              </h3>
+              <p className="text-muted-foreground">
+                Experiência e profissionalismo em cada operação
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-cunha-navy">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold font-montserrat text-white mb-4">
+            Pronto para otimizar sua logística?
+          </h2>
+          <p className="text-xl text-gray-200 mb-8">
+            Entre em contato conosco e descubra como podemos atender às necessidades do seu negócio
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-lg px-8 py-3">
+              <a href="https://wa.me/5522992559327" target="_blank" rel="noopener noreferrer">
+                <Phone className="h-5 w-5 mr-2" />
+                (22) 99255-9327
+              </a>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-cunha-navy">
+              <Link to="/contato">
+                Formulário de Contato
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Home;
