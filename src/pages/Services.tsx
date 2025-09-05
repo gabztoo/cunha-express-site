@@ -82,8 +82,8 @@ const Services = () => {
 
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <img 
-                  src="/lovable-uploads/c78079c1-c441-45a7-85fd-4455abd50502.png"
-                  alt="Van de carga Cunha Express para transporte de equipamentos e materiais"
+                  src="/lovable-uploads/caminhao-bongo.png"
+                  alt="Caminhão Cunha Express para transporte de cargas e equipamentos"
                   className="w-full h-80 object-cover"
                 />
               </div>
@@ -94,8 +94,8 @@ const Services = () => {
               <div className="order-2 lg:order-1">
                 <div className="rounded-2xl overflow-hidden shadow-lg">
                   <img 
-                    src="/lovable-uploads/ebe361fe-697b-48dc-bd12-d8b6ba2fd67c.png"
-                    alt="Van executiva Cunha Express para transporte corporativo de passageiros"
+                    src="/lovable-uploads/van-fiorino.png"
+                    alt="Van Fiat Fiorino Cunha Express para transporte corporativo de passageiros"
                     className="w-full h-80 object-cover"
                   />
                 </div>
