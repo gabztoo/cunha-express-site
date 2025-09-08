@@ -22,11 +22,11 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <img 
-              src="/lovable-uploads/cunha-express-logo.png" 
-              alt="Cunha Express"
-              className="h-12 w-auto"
-            />
+            <img
+          src="/lovable-uploads/CUNHA_EXPRESS.png"
+          alt="Cunha Express"
+          className="h-20 w-auto"
+        />
           </Link>
 
           {/* Desktop Navigation */}

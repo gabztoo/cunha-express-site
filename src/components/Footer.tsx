@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Logo e Descrição */}
           <div className="space-y-4">
             <img 
-              src="/lovable-uploads/cunha-express-logo.png" 
+              src="/lovable-uploads/CUNHA_EXPRESS.png" 
               alt="Cunha Express"
               className="h-16 w-auto brightness-0 invert"
             />

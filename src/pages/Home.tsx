@@ -42,7 +42,7 @@ const Home = () => {
                 </Link>
               </Button>
               
-              <Button asChild variant="outline" size="lg" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-cunha-navy">
+              <Button asChild variant="outline" size="lg" className="text-lg px-8 py-3 border-white text-black hover:bg-white hover:text-cunha-navy">
                 <Link to="/servicos">
                   Nossos Serviços
                 </Link>
@@ -69,8 +69,8 @@ const Home = () => {
               <div className="space-y-4">
                 <div className="rounded-2xl overflow-hidden shadow-lg">
                   <img 
-                    src="/lovable-uploads/van-branca-carga.png"
-                    alt="Van branca Cunha Express para transporte de cargas"
+                    src="/src/uploads/montana 2024.jpg"
+                    alt="Montana 2024 Cunha Express para transporte de cargas"
                     className="w-full h-80 object-cover"
                   />
                   <p className="text-xs text-muted-foreground text-center mt-2 px-4 pb-2">
@@ -80,8 +80,16 @@ const Home = () => {
                 
                 <div className="rounded-xl overflow-hidden shadow-md">
                   <img 
-                    src="/lovable-uploads/van-passageiros.png"
-                    alt="Van Cunha Express para transporte de passageiros"
+                    src="/src/uploads/fiorino novo.jpg"
+                    alt="Fiorino Novo Cunha Express para transporte"
+                    className="w-full h-60 object-cover"
+                  />
+                </div>
+                
+                <div className="rounded-xl overflow-hidden shadow-md">
+                  <img 
+                    src="/src/uploads/kia bongo.jpg"
+                    alt="Kia Bongo Cunha Express para transporte de cargas"
                     className="w-full h-60 object-cover"
                   />
                 </div>
@@ -199,7 +207,7 @@ const Home = () => {
                 (22) 99255-9327
               </a>
             </Button>
-            <Button asChild variant="outline" size="lg" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-cunha-navy">
+            <Button asChild variant="outline" size="lg" className="text-lg px-8 py-3 border-white text-black hover:bg-white hover:text-cunha-navy">
               <Link to="/contato">
                 Formulário de Contato
               </Link>
