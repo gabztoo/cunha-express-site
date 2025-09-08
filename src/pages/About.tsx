@@ -170,7 +170,7 @@ const About = () => {
                   <CheckCircle className="h-6 w-6 text-accent flex-shrink-0 mt-0.5" />
                   <div>
                     <h4 className="font-semibold text-cunha-navy">Seguro Completo</h4>
-                    <p className="text-muted-foreground">Cobertura total para cargas e passageiros durante o transporte</p>
+                    <p className="text-muted-foreground">Cobertura total para cargas durante o transporte</p>
                   </div>
                 </div>
                 

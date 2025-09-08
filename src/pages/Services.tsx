@@ -80,70 +80,29 @@ const Services = () => {
                 </Button>
               </div>
 
-              <div className="rounded-2xl overflow-hidden shadow-lg">
-                <img 
-                  src="/lovable-uploads/caminhao-bongo.png"
-                  alt="Caminhão Cunha Express para transporte de cargas e equipamentos"
-                  className="w-full h-80 object-cover"
-                />
-              </div>
-            </div>
-
-            {/* Cunha Corporativo */}
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="order-2 lg:order-1">
+              <div className="space-y-4">
                 <div className="rounded-2xl overflow-hidden shadow-lg">
                   <img 
-                    src="/lovable-uploads/van-fiorino.png"
-                    alt="Van Fiat Fiorino Cunha Express para transporte corporativo de passageiros"
+                    src="/lovable-uploads/van-branca-carga.png"
+                    alt="Van branca Cunha Express para transporte de cargas"
                     className="w-full h-80 object-cover"
+                  />
+                  <p className="text-xs text-muted-foreground text-center mt-2 px-4 pb-2">
+                    *Veículo sujeito a alteração dependendo do serviço
+                  </p>
+                </div>
+                
+                <div className="rounded-xl overflow-hidden shadow-md">
+                  <img 
+                    src="/lovable-uploads/van-passageiros.png"
+                    alt="Van Cunha Express para transporte de passageiros"
+                    className="w-full h-60 object-cover"
                   />
                 </div>
               </div>
-
-              <div className="order-1 lg:order-2">
-                <Badge className="bg-accent/10 text-accent mb-4">
-                  <Users className="h-4 w-4 mr-2" />
-                  Transporte Executivo
-                </Badge>
-                
-                <h2 className="text-3xl md:text-4xl font-bold font-montserrat text-cunha-navy mb-6">
-                  Cunha Corporativo
-                </h2>
-                
-                <p className="text-lg text-muted-foreground mb-6">
-                  Oferecemos um serviço de transporte executivo para seus colaboradores. 
-                  Somos especialistas em traslados para aeroportos, viagens de negócios e transporte 
-                  para eventos corporativos, operando com base em agendamentos para garantir a pontualidade.
-                </p>
-
-                <div className="space-y-4 mb-8">
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
-                    <span>Traslados para aeroportos</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
-                    <span>Viagens de negócios</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
-                    <span>Transporte para eventos corporativos</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
-                    <span>Agendamento programado</span>
-                  </div>
-                </div>
-
-                <Button asChild className="bg-accent hover:bg-accent/90">
-                  <Link to="/contato">
-                    Solicitar Orçamento
-                    <ArrowRight className="h-4 w-4 ml-2" />
-                  </Link>
-                </Button>
-              </div>
             </div>
+
+
           </div>
         </div>
       </section>

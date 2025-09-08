@@ -13,7 +13,7 @@ const Footer = () => {
               className="h-16 w-auto brightness-0 invert"
             />
             <p className="text-gray-300 text-sm">
-              Soluções em Transporte Logístico e Corporativo. 
+              Soluções em Transporte Logístico. 
               Transporte inteligente para o seu negócio.
             </p>
           </div>

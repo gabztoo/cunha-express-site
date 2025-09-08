@@ -57,67 +57,79 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold font-montserrat text-cunha-navy mb-4">
-              Nossas Soluções de Transporte
+              Nossa Solução de Transporte
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Oferecemos dois serviços especializados para atender todas as necessidades do seu negócio
+              Oferecemos serviço especializado em logística de cargas para atender todas as necessidades do seu negócio
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Cunha Cargas */}
-            <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-accent">
-              <CardContent className="p-8 text-center">
-                <div className="bg-accent/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:bg-accent/20 transition-colors">
-                  <Package className="h-10 w-10 text-accent" />
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <div className="space-y-4">
+                <div className="rounded-2xl overflow-hidden shadow-lg">
+                  <img 
+                    src="/lovable-uploads/van-branca-carga.png"
+                    alt="Van branca Cunha Express para transporte de cargas"
+                    className="w-full h-80 object-cover"
+                  />
+                  <p className="text-xs text-muted-foreground text-center mt-2 px-4 pb-2">
+                    *Veículo sujeito a alteração dependendo do serviço
+                  </p>
                 </div>
                 
-                <h3 className="text-2xl font-bold font-montserrat text-cunha-navy mb-4">
-                  Cunha Cargas
-                </h3>
-                <p className="text-lg text-muted-foreground mb-4">
-                  Logística Empresarial
-                </p>
-                <p className="text-muted-foreground mb-6">
-                  Transporte de cargas, peças e equipamentos com máxima eficiência. 
-                  Coletamos no seu ponto de origem e entregamos no destino com total segurança.
-                </p>
-                
-                <Button asChild variant="outline" className="group-hover:bg-accent group-hover:text-white transition-colors">
-                  <Link to="/servicos">
-                    Saiba Mais
-                    <ArrowRight className="h-4 w-4 ml-2" />
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
+                <div className="rounded-xl overflow-hidden shadow-md">
+                  <img 
+                    src="/lovable-uploads/van-passageiros.png"
+                    alt="Van Cunha Express para transporte de passageiros"
+                    className="w-full h-60 object-cover"
+                  />
+                </div>
+              </div>
+            </div>
 
-            {/* Cunha Corporativo */}
-            <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-accent">
-              <CardContent className="p-8 text-center">
-                <div className="bg-accent/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:bg-accent/20 transition-colors">
-                  <Users className="h-10 w-10 text-accent" />
+            <div className="order-1 lg:order-2">
+              <Badge className="bg-accent/10 text-accent mb-4">
+                <Truck className="h-4 w-4 mr-2" />
+                Transporte de Cargas
+              </Badge>
+              
+              <h2 className="text-3xl md:text-4xl font-bold font-montserrat text-cunha-navy mb-6">
+                Cunha Cargas
+              </h2>
+              
+              <p className="text-lg text-muted-foreground mb-6">
+                Oferecemos um serviço completo de logística de cargas. Somos especialistas em 
+                transporte de equipamentos, mudanças residenciais e comerciais, e fretes em geral, 
+                operando com base em agendamentos para garantir a pontualidade.
+              </p>
+
+              <div className="space-y-4 mb-8">
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
+                  <span>Transporte de equipamentos</span>
                 </div>
-                
-                <h3 className="text-2xl font-bold font-montserrat text-cunha-navy mb-4">
-                  Cunha Corporativo
-                </h3>
-                <p className="text-lg text-muted-foreground mb-4">
-                  Transporte de Passageiros
-                </p>
-                <p className="text-muted-foreground mb-6">
-                  Serviço de transporte executivo para colaboradores. Especialistas em traslados 
-                  para aeroportos, viagens de negócios e eventos corporativos.
-                </p>
-                
-                <Button asChild variant="outline" className="group-hover:bg-accent group-hover:text-white transition-colors">
-                  <Link to="/servicos">
-                    Saiba Mais
-                    <ArrowRight className="h-4 w-4 ml-2" />
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
+                  <span>Mudanças residenciais e comerciais</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
+                  <span>Fretes em geral</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
+                  <span>Agendamento programado</span>
+                </div>
+              </div>
+
+              <Button asChild className="bg-accent hover:bg-accent/90">
+                <Link to="/contato">
+                  Solicitar Orçamento
+                  <ArrowRight className="h-4 w-4 ml-2" />
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>

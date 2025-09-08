@@ -192,8 +192,6 @@ const Contact = () => {
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="cunha-cargas">Cunha Cargas - Logística Empresarial</SelectItem>
-                        <SelectItem value="cunha-corporativo">Cunha Corporativo - Transporte de Passageiros</SelectItem>
-                        <SelectItem value="ambos">Ambos os serviços</SelectItem>
                         <SelectItem value="outro">Outro</SelectItem>
                       </SelectContent>
                     </Select>
