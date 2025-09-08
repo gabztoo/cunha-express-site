@@ -17,8 +17,18 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-cunha-navy via-primary to-cunha-navy py-20 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-br from-cunha-navy via-primary to-cunha-navy py-20 lg:py-32 overflow-hidden">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0">
+          <img
+            src="/lovable-uploads/van-passageiros.png"
+            alt="Frota Cunha Express"
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-cunha-navy/90 via-cunha-navy/70 to-cunha-navy/90"></div>
+        </div>
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white space-y-8">
             <Badge className="bg-accent text-accent-foreground font-medium px-4 py-2">
               <Shield className="h-4 w-4 mr-2" />
@@ -84,15 +94,12 @@ const Home = () => {
                     alt="Fiorino Novo Cunha Express para transporte"
                     className="w-full h-60 object-cover"
                   />
+                  <p className="text-xs text-muted-foreground text-center mt-2 px-4 pb-2">
+                    *Veículo sujeito a alteração dependendo do serviço
+                  </p>
                 </div>
                 
-                <div className="rounded-xl overflow-hidden shadow-md">
-                  <img 
-                    src="/src/uploads/kia bongo.jpg"
-                    alt="Kia Bongo Cunha Express para transporte de cargas"
-                    className="w-full h-60 object-cover"
-                  />
-                </div>
+
               </div>
             </div>
 

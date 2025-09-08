@@ -1,53 +1,14 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { useToast } from "@/hooks/use-toast";
 import { 
   Phone, 
   MessageCircle, 
   Mail, 
-  MapPin, 
   Clock, 
-  Send,
   CheckCircle
 } from "lucide-react";
 
 const Contact = () => {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    nome: "",
-    email: "",
-    telefone: "",
-    servico: "",
-    mensagem: ""
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Simular envio do formulário
-    toast({
-      title: "Mensagem enviada com sucesso!",
-      description: "Entraremos em contato em breve. Obrigado pelo interesse!",
-    });
-    
-    // Limpar formulário
-    setFormData({
-      nome: "",
-      email: "",
-      telefone: "",
-      servico: "",
-      mensagem: ""
-    });
-  };
-
-  const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
-  };
 
   return (
     <div className="min-h-screen">
@@ -79,7 +40,7 @@ const Contact = () => {
                 </h3>
                 <p className="text-muted-foreground mb-4">Atendimento rápido e direto</p>
                 <Button asChild className="bg-green-600 hover:bg-green-700 w-full">
-                  <a href="https://wa.me/5522992559327" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/5522992559327?text=Oi%2C%20tudo%20bem%3F%20Quero%20fazer%20um%20or%C3%A7amento.%20Pode%20me%20passar%20uma%20proposta%3F" target="_blank" rel="noopener noreferrer">
                     <MessageCircle className="h-4 w-4 mr-2" />
                     (22) 99255-9327
                   </a>
@@ -146,84 +107,27 @@ const Contact = () => {
               </CardTitle>
             </CardHeader>
             <CardContent className="p-8">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="nome">Nome Completo *</Label>
-                    <Input
-                      id="nome"
-                      placeholder="Seu nome completo"
-                      value={formData.nome}
-                      onChange={(e) => handleInputChange("nome", e.target.value)}
-                      required
-                    />
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <Label htmlFor="email">E-mail *</Label>
-                    <Input
-                      id="email"
-                      type="email"
-                      placeholder="seu@email.com"
-                      value={formData.email}
-                      onChange={(e) => handleInputChange("email", e.target.value)}
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="telefone">Telefone/WhatsApp *</Label>
-                    <Input
-                      id="telefone"
-                      placeholder="(00) 00000-0000"
-                      value={formData.telefone}
-                      onChange={(e) => handleInputChange("telefone", e.target.value)}
-                      required
-                    />
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <Label htmlFor="servico">Serviço de Interesse</Label>
-                    <Select value={formData.servico} onValueChange={(value) => handleInputChange("servico", value)}>
-                      <SelectTrigger>
-                        <SelectValue placeholder="Selecione um serviço" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="cunha-cargas">Cunha Cargas - Logística Empresarial</SelectItem>
-                        <SelectItem value="outro">Outro</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="mensagem">Mensagem *</Label>
-                  <Textarea
-                    id="mensagem"
-                    placeholder="Conte-nos mais sobre suas necessidades de transporte..."
-                    className="min-h-32"
-                    value={formData.mensagem}
-                    onChange={(e) => handleInputChange("mensagem", e.target.value)}
-                    required
-                  />
-                </div>
-
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button type="submit" className="bg-accent hover:bg-accent/90 flex-1">
-                    <Send className="h-4 w-4 mr-2" />
-                    Enviar Mensagem
-                  </Button>
-                  
-                  <Button asChild variant="outline" className="flex-1">
-                    <a href="https://wa.me/5522992559327" target="_blank" rel="noopener noreferrer">
-                      <MessageCircle className="h-4 w-4 mr-2" />
-                      WhatsApp Direto
-                    </a>
-                  </Button>
-                </div>
-              </form>
+              {/* Zoho Forms Integration - Iframe direto */}
+              <iframe 
+                aria-label="Formulário de Contato" 
+                style={{
+                  height: "800px",
+                  width: "100%",
+                  border: "none",
+                  borderRadius: "8px"
+                }}
+                src="https://forms.zohopublic.com/admincunhaex1/form/ContactUs/formperma/fdi4jh652-u7St3G3wlvW67W9_vDetsD-TBe5uqt3FM"
+                title="Formulário de Contato Cunha Express"
+              />
+              
+              <div className="mt-6">
+                <Button asChild variant="outline" className="w-full">
+                  <a href="https://wa.me/5522992559327?text=Oi%2C%20tudo%20bem%3F%20Quero%20fazer%20um%20or%C3%A7amento.%20Pode%20me%20passar%20uma%20proposta%3F" target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="h-4 w-4 mr-2" />
+                    WhatsApp Direto
+                  </a>
+                </Button>
+              </div>
             </CardContent>
           </Card>
         </div>

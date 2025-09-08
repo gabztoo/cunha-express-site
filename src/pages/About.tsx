@@ -64,14 +64,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="bg-cunha-light-gray rounded-2xl p-8 h-96 flex items-center justify-center">
-              <div className="text-center">
-                <Users className="h-24 w-24 text-accent mx-auto mb-4" />
-                <p className="text-cunha-dark-gray">
-                  Imagem: Gustavo Cunha e equipe em frente aos veículos da empresa
-                </p>
-              </div>
-            </div>
+
           </div>
         </div>
       </section>
@@ -140,10 +133,11 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="bg-cunha-light-gray rounded-2xl p-8 h-80 flex items-center justify-center">
               <div className="text-center">
-                <Award className="h-24 w-24 text-accent mx-auto mb-4" />
-                <p className="text-cunha-dark-gray">
-                  Imagem: Certificado ANTT e outras credenciais da empresa
-                </p>
+                <img 
+                  src="/lovable-uploads/CERTIFICADO_RNTRC.png" 
+                  alt="Certificado ANTT e outras credenciais da empresa" 
+                  className="h-64 w-auto mx-auto rounded-lg shadow-lg"
+                />
               </div>
             </div>
 
@@ -240,7 +234,7 @@ const About = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-accent hover:bg-accent/90">
-              <a href="https://wa.me/5522992559327" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5522992559327?text=Oi%2C%20tudo%20bem%3F%20Quero%20fazer%20um%20or%C3%A7amento.%20Pode%20me%20passar%20uma%20proposta%3F" target="_blank" rel="noopener noreferrer">
                 <Phone className="h-5 w-5 mr-2" />
                 Falar no WhatsApp
               </a>

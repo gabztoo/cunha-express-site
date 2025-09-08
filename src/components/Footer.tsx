@@ -6,11 +6,11 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo e Descrição */}
-          <div className="space-y-4">
+          <div className="flex items-center space-x-4">
             <img 
               src="/lovable-uploads/CUNHA_EXPRESS.png" 
               alt="Cunha Express"
-              className="h-16 w-auto brightness-0 invert"
+              className="h-40 w-40 brightness-0 invert"
             />
             <p className="text-gray-300 text-sm">
               Soluções em Transporte Logístico. 
@@ -27,7 +27,7 @@ const Footer = () => {
                 <div>
                   <p className="text-sm text-gray-300">WhatsApp:</p>
                   <a 
-                    href="https://wa.me/5522992559327" 
+                    href="https://wa.me/5522992559327?text=Oi%2C%20tudo%20bem%3F%20Quero%20fazer%20um%20or%C3%A7amento.%20Pode%20me%20passar%20uma%20proposta%3F" 
                     className="text-white hover:text-accent transition-colors"
                   >
                     (22) 99255-9327
