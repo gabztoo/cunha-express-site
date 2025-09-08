@@ -134,7 +134,7 @@ const About = () => {
             <div className="bg-cunha-light-gray rounded-2xl p-8 h-80 flex items-center justify-center">
               <div className="text-center">
                 <img 
-                  src="/lovable-uploads/CERTIFICADO_RNTRC.png" 
+                  src="/uploads/CERTIFICADO_RNTRC.png" 
                   alt="Certificado ANTT e outras credenciais da empresa" 
                   className="h-64 w-auto mx-auto rounded-lg shadow-lg"
                 />

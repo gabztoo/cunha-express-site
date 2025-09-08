@@ -1,73 +1,106 @@
-# Welcome to your Lovable project
+# Cunha Express - Site Institucional
 
-## Project info
+Site institucional da empresa Cunha Express, especializada em transporte de passageiros e cargas.
 
-**URL**: https://lovable.dev/projects/aa82c9a9-d856-4811-a224-035be8e41c1e
+## Sobre o Projeto
 
-## How can I edit this code?
+Este é um site moderno e responsivo desenvolvido com React, TypeScript e Tailwind CSS, apresentando os serviços e informações da empresa Cunha Express.
 
-There are several ways of editing your application.
+## Tecnologias Utilizadas
 
-**Use Lovable**
+- React 18
+- TypeScript
+- Tailwind CSS
+- Vite
+- React Router DOM
+- Lucide React (ícones)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/aa82c9a9-d856-4811-a224-035be8e41c1e) and start prompting.
+## Como Executar o Projeto
 
-Changes made via Lovable will be committed automatically to this repo.
+### Pré-requisitos
 
-**Use your preferred IDE**
+- Node.js (versão 18 ou superior)
+- npm ou yarn
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Instalação
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone o repositório:
+```bash
+git clone <url-do-repositorio>
+cd cunha-express-site
+```
 
-Follow these steps:
+2. Instale as dependências:
+```bash
+npm install
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Execute o projeto em modo de desenvolvimento:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Acesse o site em: `http://localhost:8081`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Scripts Disponíveis
 
-**Use GitHub Codespaces**
+- `npm run dev` - Executa o projeto em modo de desenvolvimento
+- `npm run build` - Gera a build de produção
+- `npm run preview` - Visualiza a build de produção
+- `npm run lint` - Executa o linter
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Estrutura do Projeto
 
-## What technologies are used for this project?
+```
+src/
+├── components/          # Componentes reutilizáveis
+│   ├── ui/             # Componentes de interface
+│   ├── Navigation.tsx  # Navegação principal
+│   ├── Footer.tsx      # Rodapé
+│   └── WhatsAppFloat.tsx # Botão flutuante do WhatsApp
+├── pages/              # Páginas da aplicação
+│   ├── Home.tsx        # Página inicial
+│   ├── About.tsx       # Sobre a empresa
+│   ├── Services.tsx    # Serviços oferecidos
+│   ├── Contact.tsx     # Contato
+│   └── NotFound.tsx    # Página 404
+├── hooks/              # Hooks customizados
+├── lib/                # Utilitários
+└── uploads/            # Imagens dos veículos
+```
 
-This project is built with:
+## Funcionalidades
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Página Inicial**: Apresentação da empresa com hero section e destaques
+- **Sobre**: História e informações da empresa
+- **Serviços**: Detalhes dos serviços de transporte oferecidos
+- **Contato**: Formulário de contato e informações de localização
+- **Navegação Responsiva**: Interface adaptável para diferentes dispositivos
+- **Integração WhatsApp**: Botão flutuante para contato direto
 
-## How can I deploy this project?
+## Deploy
 
-Simply open [Lovable](https://lovable.dev/projects/aa82c9a9-d856-4811-a224-035be8e41c1e) and click on Share -> Publish.
+Para fazer o deploy do projeto:
 
-## Can I connect a custom domain to my Lovable project?
+1. Gere a build de produção:
+```bash
+npm run build
+```
 
-Yes, you can!
+2. Os arquivos estarão disponíveis na pasta `dist/`
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+3. Faça o upload dos arquivos para seu servidor web
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Contribuição
+
+Para contribuir com o projeto:
+
+1. Faça um fork do repositório
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`)
+3. Commit suas mudanças (`git commit -am 'Adiciona nova feature'`)
+4. Push para a branch (`git push origin feature/nova-feature`)
+5. Abra um Pull Request
+
+## Licença
+
+Este projeto é propriedade da Cunha Express. Todos os direitos reservados.

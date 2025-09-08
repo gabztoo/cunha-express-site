@@ -23,7 +23,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img
-          src="/lovable-uploads/CUNHA_EXPRESS.png"
+          src="/uploads/CUNHA_EXPRESS.png"
           alt="Cunha Express"
           className="h-20 w-auto"
         />

@@ -21,7 +21,7 @@ const Home = () => {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <img
-            src="/lovable-uploads/van-passageiros.png"
+            src="/uploads/van-passageiros.png"
             alt="Frota Cunha Express"
             className="w-full h-full object-cover opacity-20"
           />
