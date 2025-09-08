@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    .icon-fill {
+      fill: #000000;
+    }
+    @media (prefers-color-scheme: dark) {
+      .icon-fill {
+        fill: #ffffff;
+      }
+    }
+  </style>
+  
+  <!-- Simplified truck/transport icon representing Cunha Express -->
+  <rect class="icon-fill" x="4" y="12" width="16" height="8" rx="1"/>
+  <rect class="icon-fill" x="20" y="14" width="6" height="6" rx="1"/>
+  <circle class="icon-fill" cx="8" cy="24" r="2"/>
+  <circle class="icon-fill" cx="22" cy="24" r="2"/>
+  
+  <!-- Express lines for speed -->
+  <rect class="icon-fill" x="2" y="8" width="8" height="1" rx="0.5"/>
+  <rect class="icon-fill" x="2" y="10" width="6" height="1" rx="0.5"/>
+  <rect class="icon-fill" x="2" y="6" width="10" height="1" rx="0.5"/>
+</svg>
