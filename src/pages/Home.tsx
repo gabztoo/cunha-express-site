@@ -21,7 +21,7 @@ const Home = () => {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <img
-            src="/uploads/van-passageiros.png"
+            src="/uploads/kia bongo.jpg"
             alt="Frota Cunha Express"
             className="w-full h-full object-cover opacity-20"
           />
@@ -79,7 +79,7 @@ const Home = () => {
               <div className="space-y-4">
                 <div className="rounded-2xl overflow-hidden shadow-lg">
                   <img 
-                    src="/src/uploads/montana 2024.jpg"
+                    src="/uploads/montana 2024.jpg"
                     alt="Montana 2024 Cunha Express para transporte de cargas"
                     className="w-full h-80 object-cover"
                   />
@@ -90,7 +90,7 @@ const Home = () => {
                 
                 <div className="rounded-xl overflow-hidden shadow-md">
                   <img 
-                    src="/src/uploads/fiorino novo.jpg"
+                    src="/uploads/fiorino novo.jpg"
                     alt="Fiorino Novo Cunha Express para transporte"
                     className="w-full h-60 object-cover"
                   />

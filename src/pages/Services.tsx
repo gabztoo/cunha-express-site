@@ -102,7 +102,7 @@ const Services = () => {
                 <div className="relative lg:min-h-[600px] flex items-center justify-center p-8">
                    <div className="w-full max-w-lg">
                      <img 
-                       src="/src/uploads/kia bongo.jpg"
+                       src="/uploads/kia bongo.jpg"
                        alt="Kia Bongo Cunha Express para transporte de cargas"
                        className="w-full h-80 object-cover rounded-xl shadow-lg"
                      />
