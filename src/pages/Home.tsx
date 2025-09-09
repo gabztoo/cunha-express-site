@@ -79,7 +79,7 @@ const Home = () => {
               <div className="space-y-4">
                 <div className="rounded-2xl overflow-hidden shadow-lg">
                   <img 
-                    src="/uploads/montana 2024.jpg"
+                    src="/uploads/mitsubishi-l200-triton-sport-2017-1.webp"
                     alt="Montana 2024 Cunha Express para transporte de cargas"
                     className="w-full h-80 object-cover"
                   />
