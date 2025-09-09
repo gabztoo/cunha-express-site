@@ -126,7 +126,7 @@ const Home = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
-                  <span>Mudanças residenciais e comerciais</span>
+                  <span>Frete dedicado</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
@@ -209,9 +209,9 @@ const Home = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-lg px-8 py-3">
-              <a href="https://wa.me/5522992559327" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5522981005651" target="_blank" rel="noopener noreferrer">
                 <Phone className="h-5 w-5 mr-2" />
-                (22) 99255-9327
+                (22) 98100-5651
               </a>
             </Button>
             <Button asChild variant="outline" size="lg" className="text-lg px-8 py-3 border-white text-black hover:bg-white hover:text-cunha-navy">

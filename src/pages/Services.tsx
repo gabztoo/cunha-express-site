@@ -106,10 +106,6 @@ const Services = () => {
                        alt="Kia Bongo Cunha Express para transporte de cargas"
                        className="w-full h-80 object-cover rounded-xl shadow-lg"
                      />
-                     <div className="mt-4 text-center">
-                       <h3 className="font-bold text-cunha-navy text-lg">Kia Bongo</h3>
-                       <p className="text-gray-600">Veículo especializado para transporte de cargas</p>
-                     </div>
                    </div>
                  </div>
               </div>
@@ -194,7 +190,7 @@ const Services = () => {
             Entre em contato conosco e vamos encontrar a melhor solução para o seu negócio
           </p>
           <Button asChild size="lg" className="bg-accent hover:bg-accent/90">
-            <a href="https://wa.me/5522992559327?text=Oi%2C%20tudo%20bem%3F%20Quero%20fazer%20um%20or%C3%A7amento.%20Pode%20me%20passar%20uma%20proposta%3F" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5522981005651?text=Oi%2C%20tudo%20bem%3F%20Quero%20fazer%20um%20or%C3%A7amento.%20Pode%20me%20passar%20uma%20proposta%3F" target="_blank" rel="noopener noreferrer">
               <Phone className="h-5 w-5 mr-2" />
               Falar no WhatsApp
             </a>
