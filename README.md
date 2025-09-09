@@ -78,6 +78,18 @@ src/
 - **Navegação Responsiva**: Interface adaptável para diferentes dispositivos
 - **Integração WhatsApp**: Botão flutuante para contato direto
 
+## Configurações de Contato
+
+### Números de WhatsApp
+- **Principal**: (22) 98100-5651
+- **Alternativo**: (22) 99255-9327
+
+### Email
+- **Contato**: contato@cunhaexpresslog.com.br
+
+### Webhook de Email
+Foi configurado um webhook para redirecionar automaticamente os emails com assunto de contato recebidos em `admin@cunhaexpresslog.com.br` para `contato@cunhaexpresslog.com.br`, garantindo que todas as mensagens de contato sejam centralizadas no email principal de atendimento.
+
 ## Deploy
 
 Para fazer o deploy do projeto:
