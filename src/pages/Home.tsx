@@ -110,7 +110,7 @@ const Home = () => {
               </Badge>
               
               <h2 className="text-3xl md:text-4xl font-bold font-montserrat text-cunha-navy mb-6">
-                Cunha Cargas
+                Cunha Express
               </h2>
               
               <p className="text-lg text-muted-foreground mb-6">
