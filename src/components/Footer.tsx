@@ -27,10 +27,10 @@ const Footer = () => {
                 <div>
                   <p className="text-sm text-gray-300">WhatsApp:</p>
                   <a 
-                    href="https://wa.me/5522992559327?text=Oi%2C%20tudo%20bem%3F%20Quero%20fazer%20um%20or%C3%A7amento.%20Pode%20me%20passar%20uma%20proposta%3F" 
+                    href="https://wa.me/5522981005651?text=Oi%2C%20tudo%20bem%3F%20Quero%20fazer%20um%20or%C3%A7amento.%20Pode%20me%20passar%20uma%20proposta%3F" 
                     className="text-white hover:text-accent transition-colors"
                   >
-                    (22) 99255-9327
+                    (22) 98100-5651
                   </a>
                 </div>
               </div>
@@ -39,10 +39,22 @@ const Footer = () => {
                 <div>
                   <p className="text-sm text-gray-300">Telefone/WhatsApp:</p>
                   <a 
-                    href="https://wa.me/5522981005651" 
+                    href="https://wa.me/5522992559327" 
                     className="text-white hover:text-accent transition-colors"
                   >
-                    (22) 98100-5651
+                    (22) 99255-9327
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Mail className="h-5 w-5 text-accent" />
+                <div>
+                  <p className="text-sm text-gray-300">Email:</p>
+                  <a 
+                    href="mailto:contato@cunhaexpresslog.com.br" 
+                    className="text-white hover:text-accent transition-colors"
+                  >
+                    contato@cunhaexpresslog.com.br
                   </a>
                 </div>
               </div>

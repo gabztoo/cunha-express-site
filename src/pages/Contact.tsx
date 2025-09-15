@@ -40,9 +40,9 @@ const Contact = () => {
                 </h3>
                 <p className="text-muted-foreground mb-4">Atendimento rápido e direto</p>
                 <Button asChild className="bg-green-600 hover:bg-green-700 w-full">
-                  <a href="https://wa.me/5522992559327?text=Oi%2C%20tudo%20bem%3F%20Quero%20fazer%20um%20or%C3%A7amento.%20Pode%20me%20passar%20uma%20proposta%3F" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/5522981005651?text=Oi%2C%20tudo%20bem%3F%20Quero%20fazer%20um%20or%C3%A7amento.%20Pode%20me%20passar%20uma%20proposta%3F" target="_blank" rel="noopener noreferrer">
                     <MessageCircle className="h-4 w-4 mr-2" />
-                    (22) 99255-9327
+                    (22) 98100-5651
                   </a>
                 </Button>
               </CardContent>
@@ -59,9 +59,9 @@ const Contact = () => {
                 </h3>
                 <p className="text-muted-foreground mb-4">Linha alternativa</p>
                 <Button asChild variant="outline" className="w-full">
-                  <a href="https://wa.me/5522981005651" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/5522992559327" target="_blank" rel="noopener noreferrer">
                     <Phone className="h-4 w-4 mr-2" />
-                    (22) 98100-5651
+                    (22) 99255-9327
                   </a>
                 </Button>
               </CardContent>
@@ -122,7 +122,7 @@ const Contact = () => {
               
               <div className="mt-6">
                 <Button asChild variant="outline" className="w-full">
-                  <a href="https://wa.me/5522992559327?text=Oi%2C%20tudo%20bem%3F%20Quero%20fazer%20um%20or%C3%A7amento.%20Pode%20me%20passar%20uma%20proposta%3F" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/5522981005651?text=Oi%2C%20tudo%20bem%3F%20Quero%20fazer%20um%20or%C3%A7amento.%20Pode%20me%20passar%20uma%20proposta%3F" target="_blank" rel="noopener noreferrer">
                     <MessageCircle className="h-4 w-4 mr-2" />
                     WhatsApp Direto
                   </a>
