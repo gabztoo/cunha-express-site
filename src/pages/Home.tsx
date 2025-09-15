@@ -36,12 +36,12 @@ const Home = () => {
             </Badge>
             
             <h1 className="text-4xl md:text-6xl font-bold font-montserrat leading-tight">
-              Transporte de Cargas 
-              <span className="text-accent"> Especializado</span>
+              Entregas Express 
+              <span className="text-accent"> no Rio de Janeiro</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
-              Soluções rápidas e seguras em logística de cargas e transporte corporativo de passageiros.
+              Entregas express rápidas e seguras. Logística especializada com pontualidade garantida.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -109,13 +109,13 @@ const Home = () => {
                 Transporte de Cargas
               </Badge>
               
-              <h3 className="text-3xl md:text-4xl font-bold font-montserrat text-cunha-navy mb-6">
-                Cunha Express - Transporte de Cargas
-              </h3>
+              <h2 className="text-3xl md:text-4xl font-bold font-montserrat text-cunha-navy mb-6">
+                Cunha Express - Entregas Express
+              </h2>
               
               <p className="text-lg text-muted-foreground mb-6">
-                Oferecemos um serviço completo de logística de cargas. Somos especialistas em 
-                transporte de equipamentos, mudanças residenciais e comerciais, e fretes em geral, 
+                Oferecemos entregas express com agilidade e segurança. Somos especialistas em 
+                entregas urgentes, transporte rápido de equipamentos, mudanças e fretes expressos, 
                 operando com base em agendamentos para garantir a pontualidade.
               </p>
 
@@ -155,30 +155,30 @@ const Home = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold font-montserrat text-cunha-navy mb-6">
-                Especialistas em Transporte de Cargas
+                Especialistas em Entregas Express
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
-                A Cunha Express é uma empresa especializada em transporte de cargas que atua no mercado 
-                oferecendo soluções completas em logística. Nossa experiência no setor de transporte de cargas 
+                A Cunha Express é uma empresa especializada em entregas express que atua no mercado 
+                oferecendo soluções rápidas em logística. Nossa experiência no setor de entregas express 
                 nos permite atender desde pequenas empresas até grandes corporações, sempre com o mesmo 
-                compromisso de qualidade e pontualidade.
+                compromisso de agilidade e pontualidade.
               </p>
               <p className="text-lg text-muted-foreground mb-6">
-                Nosso serviço de transporte de cargas abrange mudanças residenciais e comerciais, 
-                transporte de equipamentos industriais, fretes expressos e logística programada. 
-                Contamos com uma frota moderna e motoristas experientes para garantir que sua carga 
-                chegue ao destino com total segurança.
+                Nosso serviço de entregas express abrange mudanças residenciais e comerciais, 
+                transporte urgente de equipamentos industriais, entregas expressas e logística programada. 
+                Contamos com uma frota moderna e motoristas experientes para garantir que suas entregas express 
+                cheguem ao destino com total segurança e agilidade.
               </p>
               <p className="text-lg text-muted-foreground mb-6">
-                O transporte de cargas da Cunha Express é certificado pela ANTT (Agência Nacional de 
+                As entregas express da Cunha Express são certificadas pela ANTT (Agência Nacional de 
                 Transportes Terrestres) sob o registro RNTRC 053472755, garantindo que todos os nossos 
-                serviços estejam em conformidade com as normas brasileiras de transporte de cargas.
+                serviços de entregas express estejam em conformidade com as normas brasileiras de transporte.
               </p>
             </div>
             <div>
-              <h3 className="text-2xl font-bold font-montserrat text-cunha-navy mb-6">
-                Nossos Diferenciais no Transporte de Cargas
-              </h3>
+              <h2 className="text-2xl font-bold font-montserrat text-cunha-navy mb-6">
+                Nossos Diferenciais em Entregas Express
+              </h2>
               <div className="space-y-6">
                 <div className="border-l-4 border-accent pl-6">
                   <h4 className="text-xl font-semibold text-cunha-navy mb-2">Agendamento Programado</h4>
@@ -212,7 +212,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold font-montserrat text-cunha-navy mb-4">
-              Por que escolher nosso Transporte de Cargas?
+              Por que escolher nossas Entregas Express?
             </h2>
           </div>
 
