@@ -40,14 +40,22 @@ const Home = () => {
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="hero-overlay absolute inset-0" />
 
-        <img
-          src="/uploads/kia bongo.jpg"
-          alt="Frota Cunha Express em operação"
-          width={1600}
-          height={900}
-          fetchPriority="high"
-          className="absolute inset-0 h-full w-full object-cover opacity-30"
-        />
+        <picture>
+          <source
+            type="image/webp"
+            srcSet="/uploads/kia-bongo-hero-800.webp 800w, /uploads/kia-bongo-hero-1280.webp 1280w"
+            sizes="100vw"
+          />
+          <img
+            src="/uploads/kia-bongo-hero-1280.webp"
+            alt="Frota Cunha Express em operação"
+            width={1280}
+            height={720}
+            fetchPriority="high"
+            loading="eager"
+            className="absolute inset-0 h-full w-full object-cover opacity-30"
+          />
+        </picture>
 
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 pb-12 pt-12 sm:px-6 md:pb-20 md:pt-20 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12 lg:px-8 lg:pb-24">
           <div className="text-white">
@@ -93,10 +101,11 @@ const Home = () => {
 
           <aside className="rounded-2xl border border-white/20 bg-cunha-navy/85 p-5 text-white shadow-2xl backdrop-blur-sm">
             <img
-              src="/uploads/mitsubishi-l200-triton-sport-2017-1.webp"
+              src="/uploads/mitsubishi-l200-960.webp"
               alt="Veículo especializado para transporte de cargas"
               width={960}
               height={720}
+              loading="lazy"
               className="h-64 w-full rounded-xl object-cover"
             />
             <p className="mt-3 text-xs text-white/80">*Veículo sujeito a alteração dependendo do serviço.</p>
@@ -144,7 +153,7 @@ const Home = () => {
         <div className="order-2 mt-8 space-y-4 lg:order-1 lg:mt-0">
           <div className="panel-elevated rounded-2xl p-3">
             <img
-              src="/uploads/fiorino novo.jpg"
+              src="/uploads/fiorino-960.webp"
               alt="Frota de apoio para cargas urbanas"
               width={960}
               height={640}

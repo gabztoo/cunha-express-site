@@ -94,10 +94,11 @@ const Services = () => {
 
             <div className="hero-overlay relative flex items-center justify-center p-8">
               <img
-                src="/uploads/kia bongo.jpg"
+                src="/uploads/kia-bongo-card-960.webp"
                 alt="Kia Bongo Cunha Express para transporte de cargas"
                 width={960}
                 height={720}
+                loading="lazy"
                 className="h-80 w-full max-w-md rounded-2xl object-cover shadow-2xl"
               />
             </div>

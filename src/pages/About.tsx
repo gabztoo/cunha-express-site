@@ -1,9 +1,11 @@
-﻿import { Link } from "react-router-dom";
+﻿import { Suspense, lazy, useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { ArrowRight, Award, CheckCircle, Heart, Phone, Shield, Target } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import InstitutionalSlides from "@/components/InstitutionalSlides";
+
+const InstitutionalSlides = lazy(() => import("@/components/InstitutionalSlides"));
 
 const values = [
   {
@@ -24,6 +26,26 @@ const values = [
 ];
 
 const About = () => {
+  const [shouldRenderSlides, setShouldRenderSlides] = useState(false);
+  const slidesTriggerRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (shouldRenderSlides || !slidesTriggerRef.current) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+        setShouldRenderSlides(true);
+        observer.disconnect();
+      },
+      { rootMargin: "450px 0px" }
+    );
+
+    observer.observe(slidesTriggerRef.current);
+
+    return () => observer.disconnect();
+  }, [shouldRenderSlides]);
+
   return (
     <div>
       <section className="hero-overlay py-12 text-white sm:py-16">
@@ -64,10 +86,11 @@ const About = () => {
 
         <aside className="panel-elevated rounded-2xl p-5">
           <img
-            src="/uploads/CERTIFICADO_RNTRC.png"
+            src="/uploads/certificado-rntrc-960.webp"
             alt="Certificado ANTT da Cunha Express"
-            width={1024}
-            height={1024}
+            width={960}
+            height={679}
+            loading="lazy"
             className="h-72 w-full rounded-xl object-cover"
           />
           <h3 className="mt-5 text-3xl font-semibold text-cunha-navy">Regulamentação e Segurança</h3>
@@ -114,7 +137,29 @@ const About = () => {
         </div>
       </section>
 
-      <InstitutionalSlides />
+      <div ref={slidesTriggerRef}>
+        {shouldRenderSlides ? (
+          <Suspense
+            fallback={
+              <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+                <div className="panel-elevated rounded-3xl p-6">
+                  <p className="text-sm font-semibold text-muted-foreground">Carregando apresentação institucional...</p>
+                </div>
+              </section>
+            }
+          >
+            <InstitutionalSlides />
+          </Suspense>
+        ) : (
+          <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+            <div className="panel-elevated rounded-3xl p-6">
+              <p className="text-sm font-semibold text-muted-foreground">
+                Role a página para carregar a apresentação institucional.
+              </p>
+            </div>
+          </section>
+        )}
+      </div>
 
       <section className="hero-overlay py-12 text-white sm:py-16">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 text-center sm:px-6 md:grid-cols-3 lg:px-8">

@@ -27,7 +27,7 @@ const Navigation = () => {
             aria-label="Voltar para a página inicial"
           >
             <img
-              src="/uploads/CUNHA_EXPRESS.png"
+              src="/uploads/cunha-express-logo.webp"
               alt="Logo Cunha Express"
               width={136}
               height={58}

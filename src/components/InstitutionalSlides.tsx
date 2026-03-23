@@ -91,7 +91,8 @@ const InstitutionalSlides = () => {
                         alt={slide.alt}
                         width={1280}
                         height={720}
-                        loading={index === 0 ? "eager" : "lazy"}
+                        loading="lazy"
+                        decoding="async"
                         className="aspect-[16/9] w-full object-cover"
                       />
                       <span className="absolute right-3 top-3 inline-flex items-center gap-2 rounded-full bg-cunha-navy/80 px-3 py-1 text-xs font-semibold text-white backdrop-blur">
