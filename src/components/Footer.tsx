@@ -9,13 +9,22 @@ const Footer = () => {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.2fr_1fr_1fr] lg:px-8">
         <section>
           <div className="mb-5 flex items-center gap-4">
-            <img
-              src="/uploads/cunha-express-logo.webp"
-              alt="Logo Cunha Express"
-              width={120}
-              height={120}
-              className="h-16 w-auto rounded-md bg-white/5 p-1"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet="/uploads/cunha-express-logo-96.webp 96w, /uploads/cunha-express-logo-160.webp 160w"
+                sizes="64px"
+              />
+              <img
+                src="/uploads/cunha-express-logo-96.webp"
+                alt="Logo Cunha Express"
+                width={96}
+                height={96}
+                loading="lazy"
+                decoding="async"
+                className="h-16 w-auto rounded-md bg-white/5 p-1"
+              />
+            </picture>
             <div>
               <p className="font-display text-2xl font-semibold uppercase tracking-[0.12em]">Cunha Express</p>
               <p className="text-sm text-white/70">Transporte inteligente para o seu negócio</p>

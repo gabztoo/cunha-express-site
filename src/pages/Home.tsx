@@ -43,16 +43,17 @@ const Home = () => {
         <picture>
           <source
             type="image/webp"
-            srcSet="/uploads/kia-bongo-hero-800.webp 800w, /uploads/kia-bongo-hero-1280.webp 1280w"
+            srcSet="/uploads/kia-bongo-hero-480.webp 480w, /uploads/kia-bongo-hero-740.webp 740w"
             sizes="100vw"
           />
           <img
-            src="/uploads/kia-bongo-hero-1280.webp"
+            src="/uploads/kia-bongo-hero-740.webp"
             alt="Frota Cunha Express em operação"
-            width={1280}
-            height={720}
+            width={740}
+            height={532}
             fetchPriority="high"
             loading="eager"
+            decoding="async"
             className="absolute inset-0 h-full w-full object-cover opacity-30"
           />
         </picture>
@@ -100,14 +101,22 @@ const Home = () => {
           </div>
 
           <aside className="rounded-2xl border border-white/20 bg-cunha-navy/85 p-5 text-white shadow-2xl backdrop-blur-sm">
-            <img
-              src="/uploads/mitsubishi-l200-960.webp"
-              alt="Veículo especializado para transporte de cargas"
-              width={960}
-              height={720}
-              loading="lazy"
-              className="h-64 w-full rounded-xl object-cover"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet="/uploads/mitsubishi-l200-480.webp 480w, /uploads/mitsubishi-l200-720.webp 720w, /uploads/mitsubishi-l200-960.webp 960w"
+                sizes="(min-width: 1024px) 42vw, 100vw"
+              />
+              <img
+                src="/uploads/mitsubishi-l200-720.webp"
+                alt="Veículo especializado para transporte de cargas"
+                width={720}
+                height={480}
+                loading="lazy"
+                decoding="async"
+                className="h-64 w-full rounded-xl object-cover"
+              />
+            </picture>
             <p className="mt-3 text-xs text-white/80">*Veículo sujeito a alteração dependendo do serviço.</p>
 
             <div className="mt-5 space-y-3">
@@ -152,14 +161,22 @@ const Home = () => {
       <section className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:grid lg:grid-cols-2 lg:items-center lg:gap-12 lg:px-8 lg:py-16">
         <div className="order-2 mt-8 space-y-4 lg:order-1 lg:mt-0">
           <div className="panel-elevated rounded-2xl p-3">
-            <img
-              src="/uploads/fiorino-960.webp"
-              alt="Frota de apoio para cargas urbanas"
-              width={960}
-              height={640}
-              loading="lazy"
-              className="h-64 w-full rounded-xl object-cover"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet="/uploads/fiorino-480.webp 480w, /uploads/fiorino-640.webp 640w, /uploads/fiorino-960.webp 960w"
+                sizes="(min-width: 1024px) 46vw, 100vw"
+              />
+              <img
+                src="/uploads/fiorino-640.webp"
+                alt="Frota de apoio para cargas urbanas"
+                width={640}
+                height={481}
+                loading="lazy"
+                decoding="async"
+                className="h-64 w-full rounded-xl object-cover"
+              />
+            </picture>
             <p className="px-2 pb-1 pt-3 text-xs text-muted-foreground">*Veículo sujeito a alteração dependendo do serviço.</p>
           </div>
         </div>

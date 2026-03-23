@@ -4,10 +4,13 @@ import tailwindcssAnimate from "tailwindcss-animate";
 export default {
 	darkMode: ["class"],
 	content: [
-		"./pages/**/*.{ts,tsx}",
-		"./components/**/*.{ts,tsx}",
-		"./app/**/*.{ts,tsx}",
-		"./src/**/*.{ts,tsx}",
+		"./index.html",
+		"./src/main.tsx",
+		"./src/App.tsx",
+		"./src/pages/**/*.{ts,tsx}",
+		"./src/components/*.tsx",
+		"./src/components/ui/{badge,button,card,carousel,dialog,input,sonner,textarea,toast,toaster}.tsx",
+		"./src/hooks/use-toast.ts",
 	],
 	prefix: "",
 	theme: {

@@ -1,7 +1,8 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, Phone, X } from "lucide-react";
-import { Button } from "./ui/button";
+
+const WHATSAPP_HREF =
+  "https://wa.me/5522981005651?text=Oi%2C%20tudo%20bem%3F%20Quero%20fazer%20um%20or%C3%A7amento.%20Pode%20me%20passar%20uma%20proposta%3F";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,13 +27,20 @@ const Navigation = () => {
             onClick={() => setIsOpen(false)}
             aria-label="Voltar para a página inicial"
           >
-            <img
-              src="/uploads/cunha-express-logo.webp"
-              alt="Logo Cunha Express"
-              width={136}
-              height={58}
-              className="h-11 w-auto transition-transform duration-300 group-hover:scale-[1.02] sm:h-12 md:h-14"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet="/uploads/cunha-express-logo-96.webp 96w, /uploads/cunha-express-logo-160.webp 160w"
+                sizes="56px"
+              />
+              <img
+                src="/uploads/cunha-express-logo-160.webp"
+                alt="Logo Cunha Express"
+                width={160}
+                height={160}
+                className="h-11 w-auto transition-transform duration-300 group-hover:scale-[1.02] sm:h-12 md:h-14"
+              />
+            </picture>
             <div className="hidden lg:block">
               <p className="font-display text-lg font-semibold uppercase tracking-[0.18em] text-cunha-navy">
                 Cunha Express
@@ -43,7 +51,7 @@ const Navigation = () => {
             </div>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-1" aria-label="Navegação principal">
+          <nav className="hidden items-center gap-1 md:flex" aria-label="Navegação principal">
             {navItems.map((item) => {
               const active = isActive(item.path);
 
@@ -65,34 +73,30 @@ const Navigation = () => {
           </nav>
 
           <div className="hidden md:block">
-            <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
-              <a
-                href="https://wa.me/5522981005651?text=Oi%2C%20tudo%20bem%3F%20Quero%20fazer%20um%20or%C3%A7amento.%20Pode%20me%20passar%20uma%20proposta%3F"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Phone className="h-4 w-4" aria-hidden="true" />
-                WhatsApp
-              </a>
-            </Button>
+            <a
+              href={WHATSAPP_HREF}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-[44px] items-center rounded-md bg-accent px-4 py-2.5 text-sm font-semibold text-accent-foreground transition-colors hover:bg-accent/90"
+            >
+              WhatsApp
+            </a>
           </div>
 
-          <Button
+          <button
             type="button"
-            variant="ghost"
-            size="icon"
-            className="md:hidden"
+            className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-md border border-border bg-white/70 text-xl leading-none text-cunha-navy md:hidden"
             aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
             aria-expanded={isOpen}
             aria-controls="mobile-menu"
             onClick={() => setIsOpen((prev) => !prev)}
           >
-            {isOpen ? <X className="h-5 w-5" aria-hidden="true" /> : <Menu className="h-5 w-5" aria-hidden="true" />}
-          </Button>
+            <span aria-hidden="true">{isOpen ? "x" : "|||"}</span>
+          </button>
         </div>
 
         {isOpen && (
-          <div id="mobile-menu" className="md:hidden border-t border-border/80 pb-4 pt-2">
+          <div id="mobile-menu" className="border-t border-border/80 pb-4 pt-2 md:hidden">
             <nav className="space-y-1" aria-label="Navegação mobile">
               {navItems.map((item) => {
                 const active = isActive(item.path);
@@ -115,17 +119,15 @@ const Navigation = () => {
               })}
             </nav>
 
-            <Button asChild className="mt-3 w-full bg-accent text-accent-foreground hover:bg-accent/90">
-              <a
-                href="https://wa.me/5522981005651?text=Oi%2C%20tudo%20bem%3F%20Quero%20fazer%20um%20or%C3%A7amento.%20Pode%20me%20passar%20uma%20proposta%3F"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setIsOpen(false)}
-              >
-                <Phone className="h-4 w-4" aria-hidden="true" />
-                Falar no WhatsApp
-              </a>
-            </Button>
+            <a
+              href={WHATSAPP_HREF}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsOpen(false)}
+              className="mt-3 inline-flex min-h-[44px] w-full items-center justify-center rounded-md bg-accent px-4 py-2.5 text-sm font-semibold text-accent-foreground transition-colors hover:bg-accent/90"
+            >
+              Falar no WhatsApp
+            </a>
           </div>
         )}
       </div>
