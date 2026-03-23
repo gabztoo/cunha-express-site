@@ -12,11 +12,11 @@ const Footer = () => {
             <picture>
               <source
                 type="image/webp"
-                srcSet="/uploads/cunha-express-logo-96.webp 96w, /uploads/cunha-express-logo-160.webp 160w"
+                srcSet="/uploads/cunha-express-icon-96.webp 96w, /uploads/cunha-express-icon-160.webp 160w"
                 sizes="64px"
               />
               <img
-                src="/uploads/cunha-express-logo-96.webp"
+                src="/uploads/cunha-express-icon-96.webp"
                 alt="Logo Cunha Express"
                 width={96}
                 height={96}
