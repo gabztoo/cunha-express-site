@@ -1,88 +1,107 @@
-import { Phone, Mail, Shield } from "lucide-react";
+﻿import { Link } from "react-router-dom";
+import { Mail, Phone, Shield } from "lucide-react";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
-    <footer className="bg-cunha-navy text-white py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Logo e Descrição */}
-          <div className="flex items-center space-x-4">
-            <img 
-              src="/uploads/CUNHA_EXPRESS.png" 
-              alt="Cunha Express"
-              className="h-40 w-40 brightness-0 invert"
+    <footer className="mt-20 border-t border-white/10 bg-cunha-navy text-white">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.2fr_1fr_1fr] lg:px-8">
+        <section>
+          <div className="mb-5 flex items-center gap-4">
+            <img
+              src="/uploads/CUNHA_EXPRESS.png"
+              alt="Logo Cunha Express"
+              width={120}
+              height={120}
+              className="h-16 w-auto rounded-md bg-white/5 p-1"
             />
-            <p className="text-gray-300 text-sm">
-              Soluções em Transporte Logístico. 
-              Transporte inteligente para o seu negócio.
-            </p>
-          </div>
-
-          {/* Contatos */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold font-montserrat">Contatos</h3>
-            <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-accent" />
-                <div>
-                  <p className="text-sm text-gray-300">WhatsApp:</p>
-                  <a 
-                    href="https://wa.me/5522981005651?text=Oi%2C%20tudo%20bem%3F%20Quero%20fazer%20um%20or%C3%A7amento.%20Pode%20me%20passar%20uma%20proposta%3F" 
-                    className="text-white hover:text-accent transition-colors"
-                  >
-                    (22) 98100-5651
-                  </a>
-                </div>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-accent" />
-                <div>
-                  <p className="text-sm text-gray-300">Telefone/WhatsApp:</p>
-                  <a 
-                    href="https://wa.me/5522992559327" 
-                    className="text-white hover:text-accent transition-colors"
-                  >
-                    (22) 99255-9327
-                  </a>
-                </div>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-accent" />
-                <div>
-                  <p className="text-sm text-gray-300">Email:</p>
-                  <a 
-                    href="mailto:contato@cunhaexpresslog.com.br" 
-                    className="text-white hover:text-accent transition-colors"
-                  >
-                    contato@cunhaexpresslog.com.br
-                  </a>
-                </div>
-              </div>
+            <div>
+              <p className="font-display text-2xl font-semibold uppercase tracking-[0.12em]">Cunha Express</p>
+              <p className="text-sm text-white/70">Transporte inteligente para o seu negócio</p>
             </div>
           </div>
+          <p className="max-w-md text-sm leading-relaxed text-white/75">
+            Soluções em transporte logístico com operação dedicada, pontualidade e foco em continuidade das
+            operações B2B.
+          </p>
+        </section>
 
-          {/* Certificações */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold font-montserrat">Certificações</h3>
-            <div className="flex items-center space-x-3">
-              <Shield className="h-6 w-6 text-accent" />
+        <section>
+          <h2 className="mb-4 font-display text-xl font-semibold uppercase tracking-[0.1em] text-white">Contato</h2>
+          <ul className="space-y-4 text-sm text-white/80">
+            <li className="flex items-start gap-3">
+              <Phone className="mt-0.5 h-4 w-4 text-accent" aria-hidden="true" />
               <div>
-                <p className="text-sm text-gray-300">Certificado ANTT</p>
-                <p className="text-white font-medium">RNTRC 053472755</p>
+                <p className="font-semibold text-white">WhatsApp Principal</p>
+                <a
+                  className="hover:text-accent"
+                  href="https://wa.me/5522981005651?text=Oi%2C%20tudo%20bem%3F%20Quero%20fazer%20um%20or%C3%A7amento.%20Pode%20me%20passar%20uma%20proposta%3F"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  (22) 98100-5651
+                </a>
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <Phone className="mt-0.5 h-4 w-4 text-accent" aria-hidden="true" />
+              <div>
+                <p className="font-semibold text-white">Telefone / WhatsApp</p>
+                <a className="hover:text-accent" href="https://wa.me/5522992559327" target="_blank" rel="noopener noreferrer">
+                  (22) 99255-9327
+                </a>
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <Mail className="mt-0.5 h-4 w-4 text-accent" aria-hidden="true" />
+              <div>
+                <p className="font-semibold text-white">Email</p>
+                <a className="break-all hover:text-accent" href="mailto:contato@cunhaexpresslog.com.br">
+                  contato@cunhaexpresslog.com.br
+                </a>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="mb-4 font-display text-xl font-semibold uppercase tracking-[0.1em] text-white">Credenciais</h2>
+          <div className="panel-elevated rounded-2xl border-white/20 bg-white/10 p-5">
+            <div className="flex items-center gap-3">
+              <Shield className="h-8 w-8 text-accent" aria-hidden="true" />
+              <div>
+                <p className="text-sm text-white/80">Certificado ANTT</p>
+                <p className="font-semibold text-white">RNTRC 053472755</p>
               </div>
             </div>
+            <p className="mt-4 text-sm leading-relaxed text-white/75">
+              Transportador Autônomo de Cargas regularizado e com operação em conformidade com as normas
+              brasileiras.
+            </p>
           </div>
-        </div>
 
-        <div className="border-t border-gray-700 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-gray-400 text-sm">
-              © 2025 Cunha Express. Todos os direitos reservados.
-            </p>
-            <p className="text-gray-400 text-sm">
-              Transportador Autônomo de Cargas - Gustavo Cunha
-            </p>
-          </div>
+          <nav aria-label="Links do rodapé" className="mt-5 grid grid-cols-2 gap-2 text-sm">
+            <Link className="rounded px-2 py-1 text-white/75 hover:bg-white/10 hover:text-white" to="/">
+              Início
+            </Link>
+            <Link className="rounded px-2 py-1 text-white/75 hover:bg-white/10 hover:text-white" to="/servicos">
+              Serviços
+            </Link>
+            <Link className="rounded px-2 py-1 text-white/75 hover:bg-white/10 hover:text-white" to="/sobre">
+              Sobre Nós
+            </Link>
+            <Link className="rounded px-2 py-1 text-white/75 hover:bg-white/10 hover:text-white" to="/contato">
+              Contato
+            </Link>
+          </nav>
+        </section>
+      </div>
+
+      <div className="border-t border-white/15">
+        <div className="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-5 text-xs text-white/60 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+          <p>&copy; {year} Cunha Express. Todos os direitos reservados.</p>
+          <p>Transportador Autônomo de Cargas - Gustavo Cunha</p>
         </div>
       </div>
     </footer>

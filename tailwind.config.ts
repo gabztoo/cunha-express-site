@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 export default {
 	darkMode: ["class"],
@@ -19,8 +20,10 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'montserrat': ['Montserrat', 'sans-serif'],
-				'roboto': ['Roboto', 'sans-serif'],
+				display: ["Barlow Condensed", "sans-serif"],
+				body: ["Manrope", "sans-serif"],
+				montserrat: ["Barlow Condensed", "sans-serif"],
+				roboto: ["Manrope", "sans-serif"],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -104,5 +107,5 @@ export default {
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [tailwindcssAnimate],
 } satisfies Config;

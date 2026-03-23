@@ -1,38 +1,49 @@
+﻿import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { Button } from "./ui/button";
-import { useState } from "react";
 
 const WhatsAppFloat = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
-      <div className="relative group">
+    <div
+      className="fixed z-50"
+      style={{
+        bottom: "calc(env(safe-area-inset-bottom, 0px) + 1rem)",
+        right: "calc(env(safe-area-inset-right, 0px) + 1rem)",
+      }}
+    >
+      <div className="group relative">
+        <span
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 -z-10 rounded-full bg-green-500/45 blur-md transition-opacity duration-300 group-hover:opacity-100 group-focus-within:opacity-100"
+        />
+
         <Button
           asChild
-          size="lg"
-          className="rounded-full h-14 w-14 bg-green-500 hover:bg-green-600 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
+          size="icon"
+          className="h-14 w-14 min-h-[44px] min-w-[44px] rounded-full bg-green-600 text-white shadow-xl transition-transform duration-300 hover:scale-105 hover:bg-green-500 focus-visible:ring-green-400"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          <a 
-            href="https://wa.me/5522981005651?text=Oi%2C%20tudo%20bem%3F%20Quero%20fazer%20um%20or%C3%A7amento.%20Pode%20me%20passar%20uma%20proposta%3F" 
-            target="_blank" 
+          <a
+            href="https://wa.me/5522981005651?text=Oi%2C%20tudo%20bem%3F%20Quero%20fazer%20um%20or%C3%A7amento.%20Pode%20me%20passar%20uma%20proposta%3F"
+            target="_blank"
             rel="noopener noreferrer"
-            aria-label="Fale conosco no WhatsApp"
+            aria-label="Falar com a Cunha Express no WhatsApp"
           >
-            <FaWhatsapp className="h-9 w-9" />
+            <FaWhatsapp className="h-8 w-8" aria-hidden="true" />
           </a>
         </Button>
-        
-        {/* Tooltip */}
-        <div 
-          className={`absolute right-full mr-3 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-lg text-sm whitespace-nowrap transition-all duration-300 ${
-            isHovered ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-2 pointer-events-none'
+
+        <div
+          role="status"
+          aria-live="polite"
+          className={`pointer-events-none absolute right-[calc(100%+0.75rem)] top-1/2 -translate-y-1/2 whitespace-nowrap rounded-md bg-cunha-navy px-3 py-2 text-sm font-medium text-white shadow-lg transition-transform transition-opacity duration-200 ${
+            isHovered ? "translate-x-0 opacity-100" : "translate-x-1 opacity-0 group-focus-within:translate-x-0 group-focus-within:opacity-100"
           }`}
         >
           Fazer um orçamento no WhatsApp
-          <div className="absolute left-full top-1/2 transform -translate-y-1/2 border-4 border-transparent border-l-gray-800"></div>
         </div>
       </div>
     </div>
