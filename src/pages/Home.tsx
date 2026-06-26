@@ -1,10 +1,10 @@
-﻿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle, Clock, Phone, Shield, Truck } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
 const trustItems = [
-  "Certificado ANTT RNTRC 053472755",
+  "RNTRC 053472755",
   "Seguro completo para cargas",
   "Atendimento rápido via WhatsApp",
 ];
@@ -60,10 +60,21 @@ const Home = () => {
 
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 pb-12 pt-12 sm:px-6 md:pb-20 md:pt-20 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12 lg:px-8 lg:pb-24">
           <div className="text-white">
-            <Badge className="mb-5 border border-white/30 bg-white/10 px-3 py-1 text-white hover:bg-white/15">
-              <Shield className="mr-2 h-4 w-4" aria-hidden="true" />
-              Certificado ANTT: RNTRC 053472755
-            </Badge>
+            <div className="mb-5 flex items-center gap-3">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet="/uploads/cunha-express-logo-96.webp 96w, /uploads/cunha-express-logo-160.webp 160w, /uploads/cunha-express-logo.webp 320w"
+                  sizes="160px"
+                />
+                <img
+                  src="/uploads/cunha-express-logo.webp"
+                  alt="Logo Cunha Express"
+                  className="h-10 w-auto object-contain sm:h-12"
+                />
+              </picture>
+            </div>
+
 
             <h1 className="max-w-3xl text-3xl font-semibold leading-[1.05] sm:text-5xl md:text-6xl">
               Entregas Express <span className="text-accent">no Rio de Janeiro</span>
@@ -101,22 +112,15 @@ const Home = () => {
           </div>
 
           <aside className="rounded-2xl border border-white/20 bg-cunha-navy/85 p-5 text-white shadow-2xl backdrop-blur-sm">
-            <picture>
-              <source
-                type="image/webp"
-                srcSet="/uploads/mitsubishi-l200-480.webp 480w, /uploads/mitsubishi-l200-720.webp 720w, /uploads/mitsubishi-l200-960.webp 960w"
-                sizes="(min-width: 1024px) 42vw, 100vw"
-              />
-              <img
-                src="/uploads/mitsubishi-l200-720.webp"
-                alt="Veículo especializado para transporte de cargas"
-                width={720}
-                height={480}
-                loading="lazy"
-                decoding="async"
-                className="h-64 w-full rounded-xl object-cover"
-              />
-            </picture>
+            <img
+              src="/uploads/carro%20prata.jpeg"
+              alt="Veículo especializado para transporte de cargas"
+              width={720}
+              height={480}
+              loading="lazy"
+              decoding="async"
+              className="h-64 w-full rounded-xl object-cover"
+            />
             <p className="mt-3 text-xs text-white/80">*Veículo sujeito a alteração dependendo do serviço.</p>
 
             <div className="mt-5 space-y-3">
