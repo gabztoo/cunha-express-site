@@ -60,25 +60,23 @@ const Home = () => {
 
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 pb-12 pt-12 sm:px-6 md:pb-20 md:pt-20 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12 lg:px-8 lg:pb-24">
           <div className="text-white">
-            <div className="mb-5 flex items-center gap-3">
-              <picture>
+            <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
+              <picture className="shrink-0">
                 <source
                   type="image/webp"
                   srcSet="/uploads/cunha-express-logo-96.webp 96w, /uploads/cunha-express-logo-160.webp 160w, /uploads/cunha-express-logo.webp 320w"
-                  sizes="160px"
+                  sizes="240px"
                 />
                 <img
                   src="/uploads/cunha-express-logo.webp"
                   alt="Logo Cunha Express"
-                  className="h-10 w-auto object-contain sm:h-12 invert"
+                  className="h-16 w-auto object-contain invert sm:h-20"
                 />
               </picture>
+              <h1 className="max-w-3xl text-3xl font-semibold leading-[1.05] sm:text-5xl md:text-6xl">
+                Entregas Express <span className="text-accent">no Rio de Janeiro</span>
+              </h1>
             </div>
-
-
-            <h1 className="max-w-3xl text-3xl font-semibold leading-[1.05] sm:text-5xl md:text-6xl">
-              Entregas Express <span className="text-accent">no Rio de Janeiro</span>
-            </h1>
 
             <p className="mt-5 max-w-2xl text-base text-white/85 sm:text-xl">
               Entregas express rápidas e seguras. Logística especializada com pontualidade garantida.
