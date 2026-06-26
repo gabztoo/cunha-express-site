@@ -70,7 +70,7 @@ const Home = () => {
                 <img
                   src="/uploads/cunha-express-logo.webp"
                   alt="Logo Cunha Express"
-                  className="h-10 w-auto object-contain sm:h-12"
+                  className="h-10 w-auto object-contain sm:h-12 invert"
                 />
               </picture>
             </div>
